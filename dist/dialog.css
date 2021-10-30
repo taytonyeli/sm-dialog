@@ -1,0 +1,26 @@
+.meta-dialog-container {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.meta-dialog {
+  border: 1px red;
+  margin: 10% auto;
+  width: 50%;
+}
+
+.meta-dialog-content {
+  text-align: center;
+}
+
+.meta-dialog-actions {
+  margin: 30px;
+}
+.meta-dialog-content {
+  padding: 10px;
+}
