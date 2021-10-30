@@ -6,14 +6,23 @@
     <link rel="stylesheet" href="dist/dialog.css"/>
 </head>
 
-<body>
-    <button>Click Me</button>
+<bod>
+    <button onclick="handleExampleClick()">Click Me</button>
+    <br/>
+    <p id="result"></p>
 
 
-    <script src="./dist/dialog.js"></script>
+    <script src="dist/dialog.js"></script>
     <script>
-        const dialog = new MetaDialog("hiya");
-        dialog.init();
+        const dialog = new MetaDialog("Are you sure you want to continue");
+
+        function handleExampleClick(){
+            dialog.init();
+        }
+
+        document.addEventListener("MetaDialogAction", function(event) {
+            document.getElementById("result").innerText = `You just clicked ${dialog.getChosenResult()}`; 
+        });
     </script>
 </body>
 
