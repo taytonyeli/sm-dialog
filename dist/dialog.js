@@ -3,3 +3,4 @@
 // TO-DO: logic for displaying confirmation message
 // TO-DO: html for dialog
 // TO-DO: styling for dialog
+console.log("we have arrived");
